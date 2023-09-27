@@ -9,12 +9,9 @@
 </head>
 
 <body>
-  <!--aqui empieza el encabezado-->
   <header>
     <h1>Not a Real CRM</h1>
   </header>
-  <!-- aqui agregamos un nav que nos ayuda a indicar
-  que hay enlaces de navegacion dentro del documento-->
   <nav>
     <ul>
       <li><a href="#home">Home</a></li>
@@ -23,11 +20,9 @@
     </ul>
   </nav>
 
-  <!-- aqui podemos anidarlo con respecto al contenido principal que es el de contacto-->
   <aside>
     <h2>Contacts</h2>
     <h2>My CRM</h2>
-    <!-- volvemos a indicar que hay contenido de navegacion-->
     <nav>
       <ul>
         <li><a href="">Contacts</a></li>
@@ -38,7 +33,6 @@
       </ul>
     </nav>
   </aside>
-  <!-- agregamos la etiqueta de contenido-->
   <main>
     <h2>Jack Smith</h2>
     Address:1 Microsoft Way <br>
@@ -55,13 +49,11 @@
   <img src="images2/delete.png" alt="delete this contact" title="delete this contact">
   <img src="images2/email.png" alt="email the contact" title="email the contact">
   <img src="images2/appointment.png" alt="appointment" title="appointment">
-  <!--ingresamos una figura dentro -->
   <figure><img src="images2/jack-smith-map.png" alt="Jack Smith map" title="Jack Smith map"></figure>
   <em>Map for Jack Smith</em>
   <h3>Last Contact Viewed</h3>
   <p><a href="">Camille Bernard</a><br>University of Paris</p>
 
-  <!-- aqui se encuentra el pie de pagina -->
   <footer>
     <p id="home"><a href="#">Home</a> | <a href="#">Catalog</a> | <a href="#">Inventory</a><br>
       <em>Copuright &copy; <time>2013</time> Not a Real CRM</em>
@@ -101,14 +93,12 @@
     </script>
 </head>
 <body>
-    <!--encabezado de la pagina-->
     <header>
         <h1>Mi ejemplo de tienda de arte</h1>
         <p><a href="">Inicio</a> | <a href="">Artista</a> | <a href="">Obras de arte</a> | <a href="">Sobre nosotros</a> | <a href="">Búsqueda</a> </p>
     </header>
 
     <h2> Maidemoiselle Caroline Rivière</h2>
-    <!--indicaremos que hay un enlace dentro del documento-->
     <nav>
     <p>de <a href="">jean-Auguste-Dominique Ingres</a></p>
     </nav>
@@ -134,7 +124,6 @@
     <img src="images3/facebook_16.png" alt=" " title=" ">
     <img src="images3/sharethis_16.png" alt=" " title=" ">
 
-    <!-- el contenido aparte también se puede anidar dentro del contenido principal -->
     <aside>
         <h3> Pinturas relacionadas </h3>
         <img src="images3/06020.jpg" alt=" " title=" ">
@@ -163,7 +152,10 @@
     <img src="images3/star-white.png" alt=" " title=" ">
     <p>Quisque vitae ipsum quis risus sagittis sollicitudin. Nam elementum ipsum malesuada mi sagittis hendrerit</p>
     <hr>
-    <a href="https://google.com">Inicio</a> | <a href="https://google.com">Obras de arte</a> | <a href="https://google.com">Artistas</a> | <a href="https://google.com">Acerca de nosotros</a>
-    <p><i>Copyright © 2022 Mi ejemplo de tienda de arte</i></p>
+    <footer>
+      <p><a href="https://google.com">Inicio</a> | <a href="https://google.com">Obras de arte</a> | <a href="https://google.com">Artistas</a> | <a href="https://google.com">Acerca de nosotros</a>
+      <i>Copyright © 2022 Mi ejemplo de tienda de arte</i>
+      </p>
+    </footer>
 </body>
 </html>
