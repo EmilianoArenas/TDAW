@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    .contenedor-imagen {
+  display: inline-block;
+}
+
+.imagen-reducida {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin: 1px;
+}
+
+.imagen-vertical {
+  height: auto;
+}
+  </style>
+      <meta charset="utf-8">
+      <title>Comparte tus viajes--Nueva York</title>
+  </head>
+  <body>
+    <h1>Comparte tus viajes</h1>
+    <h2>Nueva York - Central Park</h2>
+  <ol>
+    <li><a href="https://google.com">Descripción</a></li>
+    <li><a href="https://google.com">Fotos relacionadas</a></li>
+    <li><a href="https://google.com">Comentarios</a></li>
+  </ol>
+    <h3>Descripción</h3>
+    <p>Foto de Randy Connolly</p>
+    <p>Esta foto del Estanque del Conservatorio en <a href="https://es.wikipedia.org/wiki/Central_Park">Central Park</a> en <a href="https://es.wikipedia.org/wiki/Nueva_York">Ciudad de
+    Nueva York</a> fue tomada en Octubre 22, 2021 con una cámara Canon EOS
+    30D.</p>
+  <div style="margin-left: 40px;">
+    <img src="C:\Users\emili\Downloads\pract\images\central-park.jpg">
+  </div>
+  <div style="margin-left: 40px;">
+  <i>Estanque del Conservatorio en Central Park</i>
+</div>
+    Estanque del Conservatorio en Central Park
+    <p>Compartir:
+<a href="mailto:correo@ejemplo.com?subject=Asunto&body=Texto del mensaje">
+  <img src="C:\Users\emili\Downloads\pract\images\social\email_16.png">
+</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=TU_URL">
+  <img src="C:\Users\emili\Downloads\pract\images\social\facebook_16.png">
+</a>
+<a href="https://www.flickr.com/photos/tu-usuario">
+  <img src="C:\Users\emili\Downloads\pract\images\social\flickr_16.png">
+</a>
+<a href="tu-feed-rss.xml">
+  <img src="C:\Users\emili\Downloads\pract\images\social\rss_16.png">
+</a>
+<a href="https://twitter.com/intent/tweet?url=TU_URL&text=Texto del tuit">
+  <img src="C:\Users\emili\Downloads\pract\images\social\twitter_16.png">
+</a></p>
+    <h3>Fotos Relacionadas</h3>
+    <div class="contenedor-imagen">
+    <img src="C:\Users\emili\Downloads\pract\images\related-large1.jpg" class="imagen-reducida">
+    <img src="C:\Users\emili\Downloads\pract\images\related-large2.jpg" class="imagen-reducida">
+    <img src="C:\Users\emili\Downloads\pract\images\related-large3.jpg" class="imagen-reducida">
+  </div>
+    <h2>Reseñas</h2>
+    <p>Por Ricardo 15 Septiembre ,2021</p>
+    <p>Tranquilo con el HDR amigo</p>
+    <hr>
+    <p>Por Susana en 1 Octubre, 2021</p>
+    <p>Amo Central Park</p>
+    <hr>
+    <p><a href="https://google.com">Inicio</a> | <a href="https://google.com">Navegación</a> | <a href="https://google.com">Buscar</a></p>
+    <i>Copyright © 2022 Comparte Tus viajes</i>
+  </body>
+</html>
