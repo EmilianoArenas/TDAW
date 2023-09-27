@@ -1,0 +1,169 @@
+<!--Ejercicio 2-->
+
+<!doctype html>
+<html>
+<head>
+  <title>Not a Real CRM</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">
+</head>
+
+<body>
+  <!--aqui empieza el encabezado-->
+  <header>
+    <h1>Not a Real CRM</h1>
+  </header>
+  <!-- aqui agregamos un nav que nos ayuda a indicar
+  que hay enlaces de navegacion dentro del documento-->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="">Catalog</a></li>
+      <li><a href="">Inventory</a></li>
+    </ul>
+  </nav>
+
+  <!-- aqui podemos anidarlo con respecto al contenido principal que es el de contacto-->
+  <aside>
+    <h2>Contacts</h2>
+    <h2>My CRM</h2>
+    <!-- volvemos a indicar que hay contenido de navegacion-->
+    <nav>
+      <ul>
+        <li><a href="">Contacts</a></li>
+        <li><a href="">Orders</a></li>
+        <li><a href="">Calendar</a></li>
+        <li><a href="">Tasks</a></li>
+        <li><a href="">Evaluation Copies</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <!-- agregamos la etiqueta de contenido-->
+  <main>
+    <h2>Jack Smith</h2>
+    Address:1 Microsoft Way <br>
+    City: Redmond <br>
+    Region: WA <br>
+    Country: USA <br>
+    Postal: 98052-8300 <br>
+    Phone: +1(425) 882-8080 <br>
+    Email: <a href="">jacksmith@microsoft.com</a>
+  </main>
+
+  <img src="images2/edit.png" alt="edit this contact" title="edit this contact">
+  <img src="images2/add.png" alt="Add a new contact" title="Add a new contact">
+  <img src="images2/delete.png" alt="delete this contact" title="delete this contact">
+  <img src="images2/email.png" alt="email the contact" title="email the contact">
+  <img src="images2/appointment.png" alt="appointment" title="appointment">
+  <!--ingresamos una figura dentro -->
+  <figure><img src="images2/jack-smith-map.png" alt="Jack Smith map" title="Jack Smith map"></figure>
+  <em>Map for Jack Smith</em>
+  <h3>Last Contact Viewed</h3>
+  <p><a href="">Camille Bernard</a><br>University of Paris</p>
+
+  <!-- aqui se encuentra el pie de pagina -->
+  <footer>
+    <p id="home"><a href="#">Home</a> | <a href="#">Catalog</a> | <a href="#">Inventory</a><br>
+      <em>Copuright &copy; <time>2013</time> Not a Real CRM</em>
+    </p>
+  </footer>
+
+</body>
+
+</html>
+
+
+
+<!--Ejercicio 3-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi ejemplo de tienda de arte</title>
+    <style>
+        #imagenMediana {
+            cursor: pointer;
+        }
+        #imagenGrande {
+            display: none;
+        }
+    </style>
+    <script>
+        function mostrarImagenGrande() {
+            var imagenMediana = document.getElementById('imagenMediana');
+            var imagenGrande = document.getElementById('imagenGrande');
+
+            imagenMediana.style.display = 'none';
+            imagenGrande.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <!--encabezado de la pagina-->
+    <header>
+        <h1>Mi ejemplo de tienda de arte</h1>
+        <p><a href="">Inicio</a> | <a href="">Artista</a> | <a href="">Obras de arte</a> | <a href="">Sobre nosotros</a> | <a href="">Búsqueda</a> </p>
+    </header>
+
+    <h2> Maidemoiselle Caroline Rivière</h2>
+    <!--indicaremos que hay un enlace dentro del documento-->
+    <nav>
+    <p>de <a href="">jean-Auguste-Dominique Ingres</a></p>
+    </nav>
+    <figure><img id="imagenMediana" src="images3/06010-medium.jpg" alt="" title="" onclick="mostrarImagenGrande()">
+<img id="imagenGrande" src="images3/06010-large.jpg" alt="Descripción de la imagen grande" title="Título de la imagen grande"></figure>
+    <!--agregamos el contenido breve de la pagina-->
+    <main>
+        <p> El retrato de Mademoiselle Caroline Rivière fue pintado en 1806 por el artista Neoclásico francés
+            Jean Auguste Dominique Ingres, y hoy esta<br>expuesto en el Louvre. Es el tercero de tres retratos de la
+            familia Rivière que el artista pinto ese año.</p>
+            Fecha: 1806 <br>
+            Técnica: Oléo sobre lienzo <br>
+            Dimensiones: 100 x 70 cm <br>
+            Hogar Musée du Louvre Paris; <br>
+            <p> </p>
+            <img src="images3/add-to-basket_btn.png" alt=" " title="Añadir al carro ">
+            <img src="images3/add-to-favorites_btn.png" alt=" " title="Añadir a favoritos">
+    </main>
+    <p> </p>
+    Compartir:
+    <img src="images3/facebook_16.png" alt=" " title=" ">
+    <img src="images3/twitter_16.png" alt=" " title=" ">
+    <img src="images3/facebook_16.png" alt=" " title=" ">
+    <img src="images3/sharethis_16.png" alt=" " title=" ">
+
+    <!-- el contenido aparte también se puede anidar dentro del contenido principal -->
+    <aside>
+        <h3> Pinturas relacionadas </h3>
+        <img src="images3/06020.jpg" alt=" " title=" ">
+    <img src="images3/07020.jpg" alt=" " title=" ">
+    <img src="images3/13030.jpg" alt=" " title=" ">
+    <img src="images3/05030.jpg" alt=" " title=" ">
+    </aside>
+       <main>
+
+        <h3>Revisiones</h3>
+        <h5>Amo esta pintura</h5>
+    John Smith:
+    <img src="images3/star-orange.png" alt=" " title=" ">
+    <img src="images3/star-orange.png" alt=" " title=" ">
+    <img src="images3/star-orange.png" alt=" " title=" ">
+    <img src="images3/star-orange.png" alt=" " title=" ">
+    <img src="images3/star-white.png" alt=" " title=" ">
+    <p>Loren ipsum dolor sit amet, consectetur adipiscing elit. Etiam id metus sit amet ipsum cursus placerat nec vel enim. Aliquam justo tortor, euismod quis facilisis ullamcoper,<br>consequent sed eros</p>
+<hr>
+    <h5>Esta bien</h5>
+    Jane Doe:
+    <img src="images3/star-orange.png" alt=" " title=" ">
+    <img src="images3/star-orange.png" alt=" " title=" ">
+    <img src="images3/star-orange.png" alt=" " title=" ">
+    <img src="images3/star-white.png" alt=" " title=" ">
+    <img src="images3/star-white.png" alt=" " title=" ">
+    <p>Quisque vitae ipsum quis risus sagittis sollicitudin. Nam elementum ipsum malesuada mi sagittis hendrerit</p>
+    <hr>
+    <a href="https://google.com">Inicio</a> | <a href="https://google.com">Obras de arte</a> | <a href="https://google.com">Artistas</a> | <a href="https://google.com">Acerca de nosotros</a>
+    <p><i>Copyright © 2022 Mi ejemplo de tienda de arte</i></p>
+</body>
+</html>
