@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LAB_TDAW_4_AndrésEmilianoArenasJiménez</title>
+    <style>
+        .form-group {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            display: block;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-label input[type="checkbox"] {
+            margin-left: 2px;
+        }
+
+        .checkbox-list {
+            width: 50%;
+            float: right;
+        }
+
+        .align-right {
+            float: right;
+            clear: right;
+            margin-right: 550px;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+      <fieldset>
+          <legend>Detalles de la foto</legend>
+        <div class="form-group">
+            <label for="titulo">Titulo:</label>
+            <input type="text" id="titulo" name="titulo" required size="80">
+        </div>
+        <div class="form-group">
+            <label for "descripcion">Descripcion:</label>
+            <textarea id="descripcion" name="descripcion" rows="6" cols="60" style="width: 800px;" required></textarea>
+        </div>
+        <div style="float: left;">
+            <div class="form-group">
+                <label for="continente">Continente:</label>
+                <select id="continente" name="escoger_contienente">
+                    <option value="Escoger continente">Escoger continente</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europa">Europa</option>
+                    <option value="Norte America">Norte America</option>
+                    <option value="Sur America">Sur America</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pais">Pais:</label>
+                <select id="pais" name="Pais">
+                    <option value="Pais">Pais</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="ciudad">Ciudad:</label>
+                <input list="ciudades" name="ciudad" style="width: 320px;">
+                <datalist id="ciudades">
+                    <option value="Calgary">
+                    <option value="Montreal">
+                    <option value="Toronto">
+                    <option value="Vancouver">
+                    <option value="Tlaxcala">
+                </datalist>
+            </div>
+
+            <div class="form-group">
+                <label class="checkbox-label" for="acepto-licencia">Acepto la licencia de software
+                    <input type="checkbox" id="acepto-licencia" name="acepto-licencia">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="calificacion">Califica esta foto:</label>
+                <input type="number" id="calificacion" name="calificacion" style="width: 50px;">
+            </div>
+
+            <div class="form-group">
+                <label for="color">Coleccion de color:</label>
+                <input type="color" id="color" name="color">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </div>
+        </div>
+            <div class="form-group checkbox-list align-right">
+                <label>Copyright?</label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="copyright-reservados" name="copyright" value="Todos los derechos reservados">
+                    Todos los derechos reservados
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="creative-commons" name="copyright" value="Creative commons">
+                    Creative Commons
+                </label>
+            </div>
+
+            <div class="form-group checkbox-list align-right">
+                <label>Licencias Creative Commons</label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="attribucion" name="cc-license" value="Atribución">
+                    Atribución
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="no-commercial" name="cc-license" value="No comercial">
+                    No comercial
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="no-derivativos" name="cc-license" value="No hay trabajos derivativos">
+                    No hay trabajos derivativos
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="por-igual" name="cc-license" value="Compartir por igual">
+                    Compartir por igual
+                </label>
+            </div>
+
+            <div class="form-group checkbox-list align-right">
+                <label for="fecha-toma">Fecha de toma:</label>
+                <input type="date" id="fecha-toma" name="fecha-toma">
+            </div>
+            <div class="form-group checkbox-list align-right">
+                <label for="hora-toma">Hora de toma:</label>
+                <input type="time" id="hora-toma" name="hora-toma">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
