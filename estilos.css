@@ -1,0 +1,36 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #fadd93;
+}
+
+li {
+    background-color: #fff;
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completada {
+    background-color: #e0e0e0;
+}
+
+button {
+    background-color: #1e1eae;
+    color: #fff;
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+footer {
+    color: black;
+    padding: 0%;
+    text-align: center;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
