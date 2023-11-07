@@ -1,66 +1,60 @@
-const container = document.getElementById("puzzle-container");
-const shuffleButton = document.getElementById("shuffle-button");
-const gridSize = 4;
-let pieces = [];
+const contenedor = document.getElementById("puzzle-container");
+const botonDesordenar = document.getElementById("shuffle-button");
+const tamañoTablero = 4;
+let piezas = [];
 
-//funcion para crear una pieza de puzzle
-function createPiece(number) {
-    const piece = document.createElement("div");
-    piece.className = "puzzle-piece";
-    piece.textContent = number;
-    piece.addEventListener("click", () => movePiece(number));
-    return piece;
+function crearPieza(numero) {
+    const pieza = document.createElement("div");
+    pieza.className = "puzzle-piece";
+    pieza.textContent = numero;
+    pieza.addEventListener("click", () => moverPieza(numero));
+    return pieza;
 }
 
-//funcion para mover una pieza de puzzle
-function movePiece(number) {
-    const index = pieces.indexOf(number);
-    const emptyIndex = pieces.indexOf("");
-    if (isAdjacent(index, emptyIndex)) {
-        pieces[emptyIndex] = number;
-        pieces[index] = "";
-        updatePuzzle();
+function moverPieza(numero) {
+    const indice = piezas.indexOf(numero);
+    const indiceVacio = piezas.indexOf("");
+    if (esAdyacente(indice, indiceVacio)) {
+        piezas[indiceVacio] = numero;
+        piezas[indice] = "";
+        actualizarPuzzle();
     }
 }
 
-//funcion para verificar si dos piezas son adyacentes
-function isAdjacent(index1, index2) {
-    const row1 = Math.floor(index1 / gridSize);
-    const col1 = index1 % gridSize;
-    const row2 = Math.floor(index2 / gridSize);
-    const col2 = index2 % gridSize;
-    const rowDiff = Math.abs(row1 - row2);
-    const colDiff = Math.abs(col1 - col2);
-    return (rowDiff === 1 && colDiff === 0) || (rowDiff === 0 && colDiff === 1);
+function esAdyacente(indice1, indice2) {
+    const fila1 = Math.floor(indice1 / tamañoTablero);
+    const columna1 = indice1 % tamañoTablero;
+    const fila2 = Math.floor(indice2 / tamañoTablero);
+    const columna2 = indice2 % tamañoTablero;
+    const diferenciaFila = Math.abs(fila1 - fila2);
+    const diferenciaColumna = Math.abs(columna1 - columna2);
+    return (diferenciaFila === 1 && diferenciaColumna === 0) || (diferenciaFila === 0 && diferenciaColumna === 1);
 }
 
-//funcion para desordenar las piezas del puzzle
-function shufflePieces() {
-    for (let i = pieces.length - 1; i > 0; i--) {
+function desordenarPiezas() {
+    for (let i = piezas.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [pieces[i], pieces[j]] = [pieces[j], pieces[i]];
+        [piezas[i], piezas[j]] = [piezas[j], piezas[i]];
     }
-    updatePuzzle();
+    actualizarPuzzle();
 }
 
-//funcion para actualizar el puzzle en el DOM
-function updatePuzzle() {
-    container.innerHTML = "";
-    pieces.forEach(piece => {
-        container.appendChild(createPiece(piece));
+function actualizarPuzzle() {
+    contenedor.innerHTML = "";
+    piezas.forEach(pieza => {
+        contenedor.appendChild(crearPieza(pieza));
     });
 }
 
-//iniciar el puzzle
-for (let i = 1; i <= gridSize * gridSize - 1; i++) {
-    pieces.push(i);
+for (let i = 1; i <= tamañoTablero * tamañoTablero - 1; i++) {
+    piezas.push(i);
 }
-pieces.push(""); 
+piezas.push(""); 
 
-shufflePieces(); 
+desordenarPiezas();
 
-shuffleButton.addEventListener("click", () => {
-    shufflePieces();
+botonDesordenar.addEventListener("click", () => {
+    desordenarPiezas();
 });
 
-updatePuzzle();
+actualizarPuzzle();
